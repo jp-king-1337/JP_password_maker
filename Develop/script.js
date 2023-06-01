@@ -8,8 +8,15 @@ var specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-',
 
 
 // FUNCTIONS
-function userCriteria() {
+function generatePassword() {
+  var amount = Number(prompt("Please provide a number between 8 and 128 to choose your password lenght."));
+  var includeLowercase = confirm("Click OK to include lowercase letters.");
+  var includeUppercase = confirm("Click OK to include uppercase letters.");
+  var includeNumbers = confirm("Click OK to include numbers.");
+  var includeSpecials = confirm("Click OK to include special characters.");
 
+  var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecials];
+  return output;
 }
 
 
