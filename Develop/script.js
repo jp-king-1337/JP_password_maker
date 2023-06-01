@@ -52,6 +52,14 @@ function writePassword() {
     combinedChars = combinedChars.concat(specials);
   }
 
+  for (var count = 0; count < choices[0]; count++) {
+    var random = Math.random();
+    var randomIndex = Math.floor(random * combinedChars.length);
+
+    password += combinedChars[randomIndex];
+  }
+
+  return password
 }
 
 // Add event listener to generate button
