@@ -9,7 +9,12 @@ var specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-',
 
 // FUNCTIONS
 function generatePassword() {
+  // This should ask the user their desired password length.
   var amount = Number(prompt("Please provide a number between 8 and 128 to choose your password lenght."));
+  // THEN my input should be validated and at least one character type should be selected
+  // ??? Working on this.
+
+  // This should check what types of characters the user wants to include.
   var includeLowercase = confirm("Click OK to include lowercase letters.");
   var includeUppercase = confirm("Click OK to include uppercase letters.");
   var includeNumbers = confirm("Click OK to include numbers.");
