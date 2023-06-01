@@ -19,6 +19,7 @@ function generatePassword() {
   return output;
 }
 
+var choices = generatePassword();
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -29,6 +30,27 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  // My code:
+  var combinedChars = [];
+
+  var includeLowercase = choices[1];
+  var includeUppercase = choices[2];
+  var includeNumbers = choices[3];
+  var includeSpecials = choices[4];
+
+  if (includeLowercase) {
+    combinedChars = combinedChars.concat(lowercase);
+  }
+  if (includeUppercase) {
+    combinedChars = combinedChars.concat(uppercase);
+  }
+  if (includeNumbers) {
+    combinedChars = combinedChars.concat(numbers);
+  }
+  if (includeSpecials) {
+    combinedChars = combinedChars.concat(specials);
+  }
 
 }
 
