@@ -12,18 +12,18 @@ function generatePassword() {
   // This should ask the user their desired password length.
   var amount = Number(prompt("Please provide a number between 8 and 128 to choose your password lenght."));
 
+  // THEN my input should be validated and at least one character type should be selected
+  // has to be a number, has to be at least 8, at most 128
+
+  while (isNaN(amount) || amount < 8 || amount > 128) {
+    amount = Number(prompt("Invalid input! Please provide a number between 8 and 128 to choose your password lenght."));
+  }
+
   // This should check what types of characters the user wants to include.
   var includeLowercase = confirm("Click OK to include lowercase letters.");
   var includeUppercase = confirm("Click OK to include uppercase letters.");
   var includeNumbers = confirm("Click OK to include numbers.");
   var includeSpecials = confirm("Click OK to include special characters.");
-
-  // THEN my input should be validated and at least one character type should be selected
-  // has to be a number, has to be at least 8, at most 128
-  
-  while (isNaN(amount) || amount < 8 || amount > 128) {
-    amount = Number(prompt("Invalid input! Please provide a number between 8 and 128 to choose your password lenght."));
-  }
 
   var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecials];
   return output;
