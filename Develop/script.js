@@ -19,7 +19,11 @@ function generatePassword() {
   var includeSpecials = confirm("Click OK to include special characters.");
 
   // THEN my input should be validated and at least one character type should be selected
-  // ??? Working on this.
+  // has to be a number, has to be at least 8, at most 128
+  
+  while (isNaN(amount) || amount < 8 || amount > 128) {
+    amount = Number(prompt("Invalid input! Please provide a number between 8 and 128 to choose your password lenght."));
+  }
 
   var output = [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecials];
   return output;
