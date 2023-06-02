@@ -29,7 +29,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var choices = generatePassword();
   var passwordText = document.querySelector("#password");
-  var combinedChars = [];
+  var chosenCharSets = [];
 
   var includeLowercase = choices[1];
   var includeUppercase = choices[2];
@@ -37,25 +37,25 @@ function writePassword() {
   var includeSpecials = choices[4];
 
   if (includeLowercase) {
-    combinedChars = combinedChars.concat(lowercase);
+    chosenCharSets = chosenCharSets.concat(lowercase);
   }
   if (includeUppercase) {
-    combinedChars = combinedChars.concat(uppercase);
+    chosenCharSets = chosenCharSets.concat(uppercase);
   }
   if (includeNumbers) {
-    combinedChars = combinedChars.concat(numbers);
+    chosenCharSets = chosenCharSets.concat(numbers);
   }
   if (includeSpecials) {
-    combinedChars = combinedChars.concat(specials);
+    chosenCharSets = chosenCharSets.concat(specials);
   }
 
   var password = "";
 
   for (var count = 0; count < choices[0]; count++) {
     var random = Math.random();
-    var randomIndex = Math.floor(random * combinedChars.length);
+    var randomIndex = Math.floor(random * chosenCharSets.length);
 
-    password += combinedChars[randomIndex];
+    password += chosenCharSets[randomIndex];
   }
 
   passwordText.value = password;
