@@ -36,6 +36,8 @@ Only the first and final screenshots are of the entire page, as it seemed better
 
 ## Credits
 
+JD worked with the entire class to help us learn how to write a function that will generate and write a password. I referenced those lessons when I ran into major issues. My comments are within the passwort_v1.0_withComments branch. As noted in the description, that branch is not fully up to date with the main branch as I removed most of the comments from the main branch for readability. I made only minor changes after removing the comments.
+
 I ran into a few issues with parts of my code being in the wrong order to achieve the desired functionality. Some issues I was able to puzzle out through trial and error, while for others I consulted ChatGPT to explain to me what was wrong in a section of my code and how to fix it to achieve the desired effect.
 
 ## License
