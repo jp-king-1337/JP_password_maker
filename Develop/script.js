@@ -9,10 +9,10 @@ var specials = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-',
 
 // FUNCTIONS
 function generatePassword() {
-  var amount = Number(prompt("Please provide a number between 8 and 128 to choose your password lenght."));
+  var amount = Number(prompt("Please provide a number between 8 and 128 to choose your password length."));
 
   while (isNaN(amount) || amount < 8 || amount > 128) {
-    amount = Number(prompt("Invalid input! Please provide a number between 8 and 128 to choose your password lenght."));
+    amount = Number(prompt("Invalid input! Please provide a number between 8 and 128 to choose your password length."));
   }
 
   var includeLowercase = confirm("Click OK to include lowercase letters.");
