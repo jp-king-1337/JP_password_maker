@@ -27,6 +27,7 @@ function generatePassword() {
 var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
+  var password = "";
   var choices = generatePassword();
   var passwordText = document.querySelector("#password");
   var chosenCharSets = [];
@@ -50,8 +51,6 @@ function writePassword() {
     chosenCharSets = chosenCharSets.concat(specials);
   }
 
-  var password = "";
-
   for (var count = 0; count < passwordLength; count++) {
     var random = Math.random();
     var randomIndex = Math.floor(random * chosenCharSets.length);
@@ -61,7 +60,6 @@ function writePassword() {
   }
 
   passwordText.value = password;
-
 }
 
 generateBtn.addEventListener("click", writePassword);
