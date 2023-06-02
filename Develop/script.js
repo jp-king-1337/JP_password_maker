@@ -31,6 +31,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   var chosenCharSets = [];
 
+  var passwordLength = choices[0]
   var includeLowercase = choices[1];
   var includeUppercase = choices[2];
   var includeNumbers = choices[3];
@@ -51,7 +52,7 @@ function writePassword() {
 
   var password = "";
 
-  for (var count = 0; count < choices[0]; count++) {
+  for (var count = 0; count < passwordLength; count++) {
     var random = Math.random();
     var randomIndex = Math.floor(random * chosenCharSets.length);
 
