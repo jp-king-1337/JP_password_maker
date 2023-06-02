@@ -24,8 +24,15 @@ This project is to be graded as part of my participation in the Rutgers Coding B
 
 [Deployed Link](https://jp-king-1337.github.io/JP_password_maker/)
 
-![first photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.13%20AM.png?raw=true)
-![second photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.20%20AM.png?raw=true)
+Only the first and final screenshots are of the entire page, as it seemed better to use a smaller screenshot of each prompt to keep the storage needs of the repo a bit smaller.
+![initial view to the page](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.12.15%20PM.png?raw=true)
+![first box requesting a number between 8 and 128 to set character length of the generated password](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.12.44%20PM.png?raw=true)
+![second box which only appears if user enters an invalid number in the first box](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.12.54%20PM.png?raw=true)
+![third box confirming inclusion of lowercase letters](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.13.05%20PM.png?raw=true)
+![fourth box confirming inclusion of uppercase letters](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.13.16%20PM.png?raw=true)
+![fifth box confirming inclusion of numbers](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.13.26%20PM.png?raw=true)
+![sixth box confirming inclusion of special characters](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.13.43%20PM.png?raw=true)
+![final view of the page with generated password inside the text box](https://github.com/jp-king-1337/JP_password_maker/blob/main/screenshots/Screenshot%202023-06-01%20at%2010.13.49%20PM.png?raw=true)
 
 ## Credits
 
