@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# JP's Marvelous Password Generator
 
 ## Description
 
