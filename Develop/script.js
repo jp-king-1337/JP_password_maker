@@ -24,13 +24,10 @@ function generatePassword() {
   return output;
 }
 
-var choices = generatePassword();
-
 var generateBtn = document.querySelector("#generate");
 
-
 function writePassword() {
-  var password = generatePassword();
+  var choices = generatePassword();
   var passwordText = document.querySelector("#password");
   var combinedChars = [];
 
@@ -51,6 +48,8 @@ function writePassword() {
   if (includeSpecials) {
     combinedChars = combinedChars.concat(specials);
   }
+
+  var password = "";
 
   for (var count = 0; count < choices[0]; count++) {
     var random = Math.random();
